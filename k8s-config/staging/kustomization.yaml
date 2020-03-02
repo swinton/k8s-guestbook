@@ -1,0 +1,7 @@
+bases:
+  - ../base
+namespace: staging
+# To kustomize the image for the frontend uncomment the following:
+# images:
+#   - name: docker.io/swinton/gh-frontend
+#     newTag: v6

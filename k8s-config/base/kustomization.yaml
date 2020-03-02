@@ -1,0 +1,7 @@
+resources:
+- redis-primary-deployment.yaml
+- redis-primary-service.yaml
+- redis-replica-deployment.yaml
+- redis-replica-service.yaml
+- frontend-deployment.yaml
+- frontend-service.yaml
