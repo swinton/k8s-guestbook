@@ -1,3 +1,5 @@
 bases:
   - ../base
+patchesStrategicMerge:
+- replicas-patch.yaml
 namespace: staging
