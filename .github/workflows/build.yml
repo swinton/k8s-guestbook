@@ -18,7 +18,7 @@ jobs:
       run: |
         docker build ./app \
           --file ./app/Dockerfile \
-          --tag gb-frontend:$(date +%s)
+          --tag gb-frontend:$GITHUB_SHA
 
     - name: Log in to registry
       run: echo "${{ secrets.DOCKER_SECRET }}" | docker login --username swinton --password-stdin
@@ -39,5 +39,5 @@ jobs:
         echo IMAGE_ID=$IMAGE_ID
         echo VERSION=$VERSION
 
-        docker tag gb-frontend $IMAGE_ID:$VERSION
+        docker tag gb-frontend:$GITHUB_SHA $IMAGE_ID:$VERSION
         docker push $IMAGE_ID:$VERSION
