@@ -13,5 +13,5 @@ spec:
       $setElementOrder/containers:
       - name: php-redis
       containers:
-      - image: docker.io/swinton/gb-frontend:staging-d77ab630ebf112deca8b3f2e3b984fedc22d95d0
+      - image: docker.io/swinton/gb-frontend:staging-b47a15b0c43716efa42a833c3097226e63dfbb4c
         name: php-redis
