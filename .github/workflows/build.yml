@@ -3,8 +3,10 @@ name: Build
 on:
   push:
     branches: [master]
+    paths: ['app/*']
   pull_request:
     branches: [master]
+    paths: ['app/*']
   repository_dispatch:
     types: [build]
 
