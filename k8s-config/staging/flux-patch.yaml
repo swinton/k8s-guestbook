@@ -7,3 +7,11 @@ metadata:
     fluxcd.io/tag.php-redis: regex:^staging.*
   name: frontend
   namespace: staging
+spec:
+  template:
+    spec:
+      $setElementOrder/containers:
+      - name: php-redis
+      containers:
+      - image: docker.io/swinton/gb-frontend:staging-d77ab630ebf112deca8b3f2e3b984fedc22d95d0
+        name: php-redis
