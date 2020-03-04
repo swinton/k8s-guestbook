@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: php-redis
-        image: docker.io/swinton/gb-frontend:d3fd2239b92d236b4c23c23edcfc4b3734c0e045
+        image: docker.io/swinton/gb-frontend:c914718ad0e5381e21cbc82d57afc80cf75fe664
         resources:
           requests:
             cpu: 100m
